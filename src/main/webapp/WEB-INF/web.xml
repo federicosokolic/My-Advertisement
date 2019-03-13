@@ -3,9 +3,30 @@
          xmlns="http://java.sun.com/xml/ns/javaee"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
 
-  <welcome-file-list>
-  
-      <welcome-file>login.jsp</welcome-file>
-  </welcome-file-list>
+    <display-name>Demo Servlet Listener</display-name>
+
+    <context-param>
+        <param-name>DBUSER</param-name>
+        <param-value>root</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>DBPWD</param-name>
+        <param-value></param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>DBURL</param-name>
+        <param-value>jdbc:mysql://localhost:3306/advertisement?serverTimezone=UTC</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>DRIVER</param-name>
+        <param-value>com.mysql.jdbc.Driver</param-value>
+    </context-param>
+    
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
 
 </web-app>
